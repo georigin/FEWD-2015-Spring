@@ -1,4 +1,5 @@
 # FEWD 2015 - Spring
 
-* Author: 
-* Website: 
+* Author: George
+* Website: www.georgepauldesign.com
+
