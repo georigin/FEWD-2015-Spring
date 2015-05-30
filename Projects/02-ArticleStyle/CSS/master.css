@@ -2,18 +2,63 @@
 html,
 body {
     color:darkslategrey;
+    font-family: 'Georgia', serif;
     font-size: 20px;
 }
 
+em {
+    font-family: 'Georgia', serif;
+     color: #999;
+}
 
-h1 {
+h1,
+h4,
+h5,
+h6 {
     font-family: 'Open Sans', Helvetica, sans-serif;
     color:darkslategrey;
     font-size: 60px;
     font-weight: 800;
-    margin: 50px 0;
+    margin: 5px;
 }
 
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color:darkslategrey;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+header {
+text-align: center;
+}
+
+.list_title {
+    font-family: 'Open Sans' sans-serif;
+    color: #999;
+    font-size: 15px;
+}
+
+.header_image {
+    align-content: center;
+    display: block;
+    border: solid 1px #ccc;
+}
+
+.caption {
+    display: block;
+    border: 5px;
+    font-size: 15px;
+    margin: 10px;
+}
+    
+    
 .intro {
     font-size: 30px;
 }
