@@ -1,63 +1,87 @@
 
 html,
 body {
-    color:darkslategrey;
+    color: #222;
     font-family: 'Georgia', serif;
     font-size: 20px;
 }
 
-em {
-    font-family: 'Georgia', serif;
-     color: #999;
+blockquote {
+    Background: #f6f6f6;
+    border-left: 10px, #e3e3e3;
+    font-family: 'Georgia', 20px, #222;
+    font-style: italic;
 }
 
-h1,
-h4,
-h5,
+
+em {
+    font-family: 'Georgia', serif;
+    color: #999;
+    font-size: 20px;
+}
+
 h6 {
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    color:darkslategrey;
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
+    color: #222;
     font-size: 60px;
     font-weight: 800;
     margin: 5px;
 }
 
 h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 15px;
 }
 
 h2 {
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    color:darkslategrey;
-    font-size: 36px;
-    font-weight: 800;
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
+    color: #222;
+    font-size: 45px;
+    font-weight: 900;
     margin: 10px 0;
 }
 
 header {
-text-align: center;
+    text-align: center;
+    font-family: 'Alegreya Sans' sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    margin: 1px;
 }
 
+.header_caption {
+    font-family: 'Georgia' serif;
+    font-size: 20px;
+    color: #999;
+    font-weight: 100;
+
+}
+    
 .list_title {
-    font-family: 'Open Sans' sans-serif;
+    font-family: 'Alegreya Sans' sans-serif;
     color: #999;
     font-size: 15px;
 }
 
-.header_image {
+.header_image img {
     align-content: center;
     display: block;
     border: solid 1px #ccc;
+    padding: 5px;
+    margin:auto;
 }
 
 .caption {
     display: block;
     border: 5px;
-    font-size: 15px;
-    margin: 10px;
+    font-size: 14px;
+    color: #666;
+    margin: 1px;
 }
+
+.navigation {
     
+}
     
 .intro {
     font-size: 30px;
