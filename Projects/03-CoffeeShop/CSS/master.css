@@ -10,3 +10,101 @@ h5,
 h6 {
     font-family: "Sanchez", Georgia, serif;
 }
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+
+.title {
+    font-family: "Sanchez", Helvetica, sans-serif;
+    font-size: 60px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header {
+    background-image: url(../images/header.jpg);
+    background-color: #222;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: auto;
+    padding: 100px;
+    
+}
+
+.logo {
+    background-image: url(../images/logo_large.png);
+    background-repeat: no-repeat;
+    margin: 40px auto;
+    width: 100px;
+    height: 99px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.intro {
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    color: #ccc;
+    text-align: center;
+}
+
+.row_1 {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    display: block;
+    width: 800px;
+}
+
+.menu {
+    margin: auto 0px;
+    background-color: #AC8420;
+    font-size: 16px;
+}
+
+.menu h1{
+    text-align: center;
+    font-family: "Sanchez", Georgiam sans-serif;
+    font-size: 32px;
+}
+
+
+.menu_border {
+    border-bottom: 2px solid #9B761C;
+}
+
+.price {
+    float: right;
+    padding-left: 50px;
+    color:  #DECC9C;
+}
+
+.right_menu {
+    float: right;
+}
+
+.left_menu {
+    float: left;
+}
+
+.menu_content {
+    width: 600px;
+    margin: auto;
+}
+
+.menu_center {
+    padding: 150px;
+}
+
+.menu_item {
+    color: #fff;
+}
