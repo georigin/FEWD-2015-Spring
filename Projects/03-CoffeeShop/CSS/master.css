@@ -34,8 +34,7 @@ header {
     background-position: center;
     display: block;
     margin: auto;
-    padding: 100px;
-    
+    padding: 90px;
 }
 
 .logo {
@@ -52,9 +51,10 @@ header {
 .intro {
     font-family: "Lato", Helvetica, sans-serif;
     font-size: 22px;
-    line-height: 30px;
+    line-height: 40px;
     color: #ccc;
     text-align: center;
+    margin: 0 200px;
 }
 
 .row_1 {
@@ -77,14 +77,13 @@ header {
     font-size: 32px;
 }
 
-
 .menu_border {
     border-bottom: 2px solid #9B761C;
 }
 
 .price {
     float: right;
-    padding-left: 50px;
+    padding-left: 100px;
     color:  #DECC9C;
 }
 
@@ -97,14 +96,43 @@ header {
 }
 
 .menu_content {
-    width: 600px;
+    width: 700px;
     margin: auto;
 }
 
 .menu_center {
-    padding: 150px;
+    padding: 250px;
 }
 
 .menu_item {
     color: #fff;
+}
+
+.menu_title {
+    margin-top: 220px;
+}
+
+button {
+    padding: 17px 40px;
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    border: 3px solid #AC8420;
+    margin-top: 20px;
+    color:#AC8420;
+    text-decoration:none;
+}
+
+.location {
+    margin: auto 0px;
+    padding: 0px 470px;
+    background-color: white;
+}
+
+.location_image {
+    float: right;
+}
+
+.location_details {
+    float: left;
 }
