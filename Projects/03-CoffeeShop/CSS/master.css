@@ -124,15 +124,54 @@ button {
 }
 
 .location {
-    margin: auto 0px;
-    padding: 0px 470px;
+    display: block;
+    padding: 200px 400px;
+    margin: auto;
     background-color: white;
+    line-height: 1em;
+}
+
+.location h1{
+    line-height: 2em;
 }
 
 .location_image {
-    float: right;
 }
 
 .location_details {
     float: left;
+    padding-right: 90px;
+}
+
+
+.social {
+    padding-bottom: 80px;
+    margin: auto;
+    float: right;
+}
+
+.footer {
+    margin: auto 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #fff;
+    padding: 50px;
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.small_logo {
+    background-image: url(../images/logo_small.png);
+    margin: auto 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
 }
