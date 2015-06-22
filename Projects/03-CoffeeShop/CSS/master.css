@@ -11,10 +11,16 @@ h6 {
     font-family: "Sanchez", Georgia, serif;
 }
 
+
 li {
     list-style: none;
-    padding: 10px;
+    padding: 10px 0 10px;
 }
+
+ul{
+    padding: 0;
+}
+
 
 
 .title {
@@ -26,15 +32,40 @@ li {
     margin-top: 20px;
 }
 
-header {
+.header {
     background-image: url(../images/header.jpg);
     background-color: #222;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    display: block;
-    margin: auto;
-    padding: 90px;
+    padding: 90px 0;
+}
+
+
+@media screen and (max-width: 540px){
+	.title {
+		font-size: 30px;
+        }
+    .intro{
+        font-size: 10px;
+        }
+}
+
+@media screen and (min-width: 541px) {
+	.title {
+		font-size: 50px;
+        }
+    .intro{
+        font-size: 15px;
+        }
+}
+
+@media screen and (min-width: 741px) {
+	.title {
+		font-size: 60px;
+        }
+    .intro{
+        font-size: 15px;
+        }
 }
 
 .logo {
@@ -51,29 +82,26 @@ header {
 .intro {
     font-family: "Lato", Helvetica, sans-serif;
     font-size: 22px;
-    line-height: 40px;
+    line-height: 35px;
     color: #ccc;
     text-align: center;
-    margin: 0 200px;
 }
 
-.row_1 {
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    display: block;
-    width: 800px;
-}
 
 .menu {
-    margin: auto 0px;
     background-color: #AC8420;
     font-size: 16px;
+    margin: 0;
+}
+
+.menu_width{
+    max-width: 950px;
+
 }
 
 .menu h1{
     text-align: center;
-    font-family: "Sanchez", Georgiam sans-serif;
+    font-family: "Sanchez", Georgia, sans-serif;
     font-size: 32px;
 }
 
@@ -81,35 +109,35 @@ header {
     border-bottom: 2px solid #9B761C;
 }
 
+.second_menu {
+    margin-top: 200px;
+}
+
 .price {
     float: right;
     padding-left: 100px;
     color:  #DECC9C;
+    padding-left: 20px;
 }
 
 .right_menu {
     float: right;
+    margin: 0;
+    padding: 0;
 }
 
 .left_menu {
     float: left;
+    margin: 0;
+    padding: 0;
 }
 
-.menu_content {
-    width: 700px;
-    margin: auto;
-}
-
-.menu_center {
-    padding: 250px;
+.menu_size {
+    padding: 170px 0;
 }
 
 .menu_item {
     color: #fff;
-}
-
-.menu_title {
-    margin-top: 220px;
 }
 
 button {
@@ -124,9 +152,7 @@ button {
 }
 
 .location {
-    display: block;
-    padding: 200px 400px;
-    margin: auto;
+    padding: 190px 0 190px;
     background-color: white;
     line-height: 1em;
 }
@@ -136,27 +162,24 @@ button {
 }
 
 .location_image {
+    padding-top: 30px;
 }
 
 .location_details {
-    float: left;
-    padding-right: 90px;
+    padding-right: 10px;
+    padding-left: 20px;
 }
 
-
 .social {
-    padding-bottom: 80px;
-    margin: auto;
     float: right;
 }
 
 .footer {
-    margin: auto 10px;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: #fff;
-    padding: 50px;
+    padding: 50px 0;
     background-color: #222;
     background-size: cover;
     background-position: center;
@@ -167,11 +190,20 @@ button {
     text-decoration: none;
 }
 
+.footer p {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
 .small_logo {
     background-image: url(../images/logo_small.png);
-    margin: auto 0;
     background-repeat: no-repeat;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
+    background-position: center;
+    height: 50px;
 }
+
+
