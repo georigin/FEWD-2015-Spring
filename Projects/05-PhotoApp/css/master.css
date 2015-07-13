@@ -1,0 +1,65 @@
+body {
+    font-family: "Roboto", "Roboto Condensed", Helvetica, sans-serif;
+}
+
+.header{
+    padding: 50px 0;
+}
+
+.logo-type {
+    font-family: "Roboto";
+    font-size:  30px;
+    color: #2b3f4c;
+    font-weight: 700;
+}
+
+.logo-type span{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size:  30px;
+    color: #2b3f4c;
+}
+
+.intro {
+    background-image: url(../images/intro_bg.jpg);
+    background-color: #e77e04;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.intro h1{
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 70px;
+    margin: 0;
+}
+
+.intro p{
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 20px;
+}
+
+.features {
+    padding: 120px 0;
+}
+
+.features h2 {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 26px;
+    color: #e77e04;
+    text-transform: uppercase;
+    
+}
+
+
+
+
+.gallery {
+    background-color: #eee;
+    background-size: cover;
+    padding: 120px 0;
+}
