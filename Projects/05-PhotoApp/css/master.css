@@ -11,23 +11,52 @@ body {
     font-size:  30px;
     color: #2b3f4c;
     font-weight: 700;
+    line-height: 60px;
 }
 
-.logo-type span{
+.logo-type span {
     font-family: "Roboto";
     font-weight: 400;
     font-size:  30px;
     color: #2b3f4c;
 }
 
+.logo {
+    width: 60px;
+    height: 60px;
+    background: url(../images/icon_sprite.png) 0 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    float: left;
+    margin: 0 15px;
+}
+
+
 .intro {
     background-image: url(../images/intro_bg.jpg);
     background-color: #e77e04;
     background-size: cover;
-    padding: 120px 0;
+}
+.intro_phone {
+    position: relative;
+    padding: 100px 0;
 }
 
-.intro h1{
+.intro_phone:before {
+    background: url(../images/intro_phone.png) no-repeat center top;
+    bottom: 0;
+    content: '';
+	display:block;
+    position: absolute;
+    width: 325px;
+    height: 550px;
+    right: -150px;
+    
+}
+
+.intro h1 {
     font-family: "Roboto Condensed", Helvetica, sans-serif;
     font-weight: 100;
     color: white;
@@ -35,15 +64,75 @@ body {
     margin: 0;
 }
 
-.intro p{
+.intro p {
     font-family: "Roboto", Helvetica, sans-serif;
     font-weight: 100;
     color: white;
     font-size: 20px;
+    line-height: 30px;
+}
+
+.download-button {
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#e77e04;
+	font-family: "Roboto", Helvetica, sans-serif;
+	font-size:20px;
+	padding:22px 28px;
+	text-decoration:none;
+    margin: 10px 0;
+}
+
+.download-button:hover {
+	background-color:#f6f6f6;
+}
+
+.download-button:active {
+	position:relative;
+	top:1px;
 }
 
 .features {
-    padding: 120px 0;
+    padding: 150px 0;
+}
+
+.feature_item {
+    text-align: center;
+
+}
+
+
+.feature_item h2:before {
+    background: url(../images/icon_sprite.png);
+    content: '';
+    display: block;
+    text-align: center;
+
+}
+
+.feature_tag h2:before {
+    background-position: 0px -120px;
+    height: 65px;
+    width: 65px;
+    margin: 0 auto 35px;
+}
+
+.feature_cloud h2:before {
+    background-position: -80px -120px;
+    height: 65px;
+    width: 72px;
+    margin: 0 auto 35px;
+}
+
+.feature_map h2:before {
+    background-position: -160px -120px;
+    height: 65px;
+    width: 50px;
+    margin: 0 auto 35px;
 }
 
 .features h2 {
@@ -52,14 +141,88 @@ body {
     font-size: 26px;
     color: #e77e04;
     text-transform: uppercase;
-    
 }
 
+.appstore-button {
+    background: url(../images/icon_sprite.png) no-repeat;
+    background-color: black;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:inline-block;
+    padding:22px 28px;
+	text-decoration:none;
+    margin: 10px 0;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+    width: 100%;
+}
 
+.appstore-apple {
+    background-position: center -200px;
+    margin: 20px 10px;
+}
 
+.appstore-google {
+    background-position: center -260px;
+    margin: 20px 10px;
+}
+
+.appstore-amazon {
+    background-position: center -320px;
+    margin: 20px 10px;
+}
+
+.features p {
+    font-family: "Roboto", Helvetica, sans-serif;
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #777;
+    margin: 35px;
+}
 
 .gallery {
     background-color: #eee;
     background-size: cover;
     padding: 120px 0;
+}
+
+.gallery h2 {   
+    font-family: "Roboto condensed", Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    color: #2b3f4c;
+}
+
+.gallery p {
+    font-family: "Roboto", Helvetica, sans-serif;
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #777;
+}
+
+.app-download {
+    padding: 120px 0;
+}
+
+.app-download h2 {
+    font-family: "Roboto condensed", Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 42px;
+    color: #e77e04;
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+.app-download p {
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    margin: 5px 0 20px;
 }
