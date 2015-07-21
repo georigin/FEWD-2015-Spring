@@ -3,32 +3,32 @@
 	<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <title>Picticious</title>
-        
+
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto:300,400,700,700italic' rel='stylesheet' type='text/css'>
-        
+
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/grid.css" rel="stylesheet">
         <link href="css/master.css" rel="stylesheet">
 	</head>
 	<body class="fs-grid">
-           
+
     <header class="header">
         <div class="fs-row">
             <div class="fs-cell">
                 <div class="logo">PicticiousPro</div>
                 <div class="logo-type">Picticious<span>Pro</span></div>
-            </div>          
+            </div>
         </div>
     </header>
-        
+
     <section class="intro">
        <div class="fs-row intro_phone">
            <div class="fs-cell fs-lg-6">
         <h1>NICE SHOT</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-               <div class="download-button">DOWNLOAD NOW</div>
+               <a href="#download" class="download-button">DOWNLOAD NOW</a>
             </div>
         </div>
     </section>
@@ -36,7 +36,7 @@
     <section class="features">
        <div class="fs-row">
             <div class="fs-cell fs-all-third feature_item feature_tag">
-                
+
                     <h2>Tag It All</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit aliquet felis, quis.</p>
             </div>
@@ -51,31 +51,35 @@
             </div>
         </div>
     </section>
-    
+
     <section class="gallery">
-       <div class="fs-row">
+        <div class="fs-row">
            <div class="fs-cell fs-lg-4">
             <h2>Capture Life</h2>
                <p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        </div>
-        <div class="fs-cell fs-lg-8">
-            
-        </div>
+            </div>
+                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_01.jpg"></div>
+                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_02.jpg"></div>
+                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_03.jpg"></div>
+                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_04.jpg"></div>
+                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_05.jpg"></div>
+                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_06.jpg"></div>
+                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_07.jpg"></div>
+                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_08.jpg"></div>
         </div>
     </section>
-
     <section class="app-download">
-       <div class="fs-row">
-            <div class="fs-cell">
+       <div class="fs-row" id="download">
+            <div class="fs-centered">
                 <h2>Download Now</h2>
                     <p>Nullam id dolor id nibh ultricies vehicula deposit quid pro quo hic escorol.</p>
-                    <div class="fs-all-third appstore-button appstore-apple">Apple Store</div>
-                    <div class="fs-all-third appstore-button appstore-google">Play Store</div>
-                    <div class="fs-all-third appstore-button appstore-amazon">Apple Store</div>
+                    <a href="#" class="fs-lg-3 appstore-button appstore-apple">Apple Store</a>
+                    <a href="#" class="fs-lg-3 appstore-button appstore-google">Play Store</a>
+                    <a href="#" class="fs-lg-3 appstore-button appstore-amazon">Apple Store</a>
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="footer">
        <div class="fs-row">
             <div class="fs-cell-centered fs-lg-12">Support
             Privacy &amp; Terms
@@ -87,5 +91,5 @@
 (function(){if(typeof FSGridBookmarklet==='undefined'){document.body.appendChild(document.createElement('script')).src='https://formstone.it/js/bookmarklet/grid.js';}else{FSGridBookmarklet();}})();
 </script>
 	</body>
-	
+
 </html>

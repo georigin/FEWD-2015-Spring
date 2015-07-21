@@ -102,9 +102,7 @@ body {
 
 .feature_item {
     text-align: center;
-
 }
-
 
 .feature_item h2:before {
     background: url(../images/icon_sprite.png);
@@ -143,6 +141,11 @@ body {
     text-transform: uppercase;
 }
 
+.thumbnail img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .appstore-button {
     background: url(../images/icon_sprite.png) no-repeat;
     background-color: black;
@@ -150,13 +153,17 @@ body {
 	-webkit-border-radius:6px;
 	border-radius:6px;
 	display:inline-block;
-    padding:22px 28px;
+    padding:20px 28px;
 	text-decoration:none;
     margin: 10px 0;
     overflow: hidden;
     text-indent: 200%;
     white-space: nowrap;
-    width: 100%;
+    
+}
+
+.photo-1 {
+    background-image: url(../images/photos/thumb_01.jpg);
 }
 
 .appstore-apple {
@@ -225,4 +232,11 @@ body {
     color: #777;
     text-align: center;
     margin: 5px 0 20px;
+}
+
+.footer {
+    border-top: 2px;
+    border-style: solid;
+    border-color: darkgray;
+    padding: 50px 0;
 }
