@@ -10,7 +10,27 @@
 
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/grid.css" rel="stylesheet">
+        <link href="css/carousel.css" rel="stylesheet">
+        <link href="css/lightbox.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/animate.css">
         <link href="css/master.css" rel="stylesheet">
+
+        
+        <script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/core.js"></script>
+		<script src="js/carousel.js"></script>
+		<script src="js/lightbox.js"></script>
+		<script src="js/mediaquery.js"></script>
+		<script src="js/touch.js"></script>
+        <script src="js/transition.js"></script>
+        <script src="js/wow.min.js"></script>
+		<script src="js/master.js"></script>
+		
+		<!--[if lte IE 8]>
+		    <link href="css/grid.ie.css" re="stylesheet">
+		    <link href="css/master.ie.css" re="stylesheet">
+		  <![endif]-->
+		  
 	</head>
 	<body class="fs-grid">
 
@@ -24,28 +44,29 @@
     </header>
 
     <section class="intro">
-       <div class="fs-row intro_phone">
+       <div class="fs-row intro_row">
+          <span class="intro_phone wow fadeInRight"  data-wow-delay="0.8s"></span>
            <div class="fs-cell fs-lg-6">
-        <h1>NICE SHOT</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-               <a href="#download" class="download-button">DOWNLOAD NOW</a>
+                <h1 class=" wow fadeInUp">NICE SHOT</h1>
+                <p  class=" wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+                <a href="#download" class="download-button wow fadeInUp" data-wow-delay="0.4s">DOWNLOAD NOW</a>
             </div>
         </div>
     </section>
 
     <section class="features">
        <div class="fs-row">
-            <div class="fs-cell fs-all-third feature_item feature_tag">
+            <div class="fs-cell fs-all-third feature_item feature_tag fs-sm-3 wow fadeInUp"  data-wow-delay="0.2s">
 
                     <h2>Tag It All</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit aliquet felis, quis.</p>
             </div>
-            <div class="fs-cell fs-all-third feature_item feature_cloud">
+            <div class="fs-cell fs-all-third feature_item feature_cloud fs-sm-3 wow fadeInUp"  data-wow-delay="0.4s">
                <h2>Cloud Sync</h2>
         <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.</p>
             </div>
 
-            <div class="fs-cell fs-all-third feature_item feature_map">
+            <div class="fs-cell fs-all-third feature_item feature_map fs-sm-3 wow fadeInUp"  data-wow-delay="0.6s">
                 <h2>Photo Map</h2>
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Ligula porta felis.</p>
             </div>
@@ -58,14 +79,16 @@
             <h2>Capture Life</h2>
                <p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             </div>
-                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_01.jpg"></div>
-                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_02.jpg"></div>
-                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_03.jpg"></div>
-                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_04.jpg"></div>
-                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_05.jpg"></div>
-                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_06.jpg"></div>
-                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_07.jpg"></div>
-                <div class="fs-cell fs-lg-2 thumbnail"><img src="images/photos/thumb_08.jpg"></div>
+                <div class="fs-cell fs-lg-8 image_carousel js-carousel">
+                    <a href="images/photos/01.jpg" class="js-lightbox" data-lightbox-gallery="gallery" alt=""><img src="images/photos/thumb_01.jpg"></a>
+                    <a href="images/photos/02.jpg" class="js-lightbox" data-lightbox-gallery="gallery" alt=""><img src="images/photos/thumb_02.jpg"></a>
+                    <a href="images/photos/03.jpg" class="js-lightbox" data-lightbox-gallery="gallery" alt=""><img src="images/photos/thumb_03.jpg"></a>
+                    <a href="images/photos/04.jpg" class="js-lightbox" data-lightbox-gallery="gallery" alt=""><img src="images/photos/thumb_04.jpg"></a>
+                    <a href="images/photos/05.jpg" class="js-lightbox" data-lightbox-gallery="gallery" alt=""><img src="images/photos/thumb_05.jpg"></a>
+                    <a href="images/photos/06.jpg" class="js-lightbox" data-lightbox-gallery="gallery" alt=""><img src="images/photos/thumb_06.jpg"></a>
+                    <a href="images/photos/07.jpg" class="js-lightbox" data-lightbox-gallery="gallery" alt=""><img src="images/photos/thumb_07.jpg"></a>
+                    <a href="images/photos/08.jpg" class="js-lightbox" data-lightbox-gallery="gallery" alt=""><img src="images/photos/thumb_08.jpg"></a>
+                </div>
         </div>
     </section>
     <section class="app-download">
@@ -73,17 +96,27 @@
             <div class="fs-centered">
                 <h2>Download Now</h2>
                     <p>Nullam id dolor id nibh ultricies vehicula deposit quid pro quo hic escorol.</p>
-                    <a href="#" class="fs-lg-3 appstore-button appstore-apple">Apple Store</a>
-                    <a href="#" class="fs-lg-3 appstore-button appstore-google">Play Store</a>
-                    <a href="#" class="fs-lg-3 appstore-button appstore-amazon">Apple Store</a>
+                    <a href="#" class="fs-lg-3 fs-sm-3 fs-md-4 appstore-button appstore-apple">Apple Store</a>
+                    <a href="#" class="fs-lg-3 fs-sm-3 fs-md-4 appstore-button appstore-google">Play Store</a>
+                    <a href="#" class="fs-lg-3 fs-sm-3 fs-md-4 appstore-button appstore-amazon">Apple Store</a>
             </div>
         </div>
     </section>
     <footer class="footer">
        <div class="fs-row">
-            <div class="fs-cell-centered fs-lg-12">Support
-            Privacy &amp; Terms
-            © 2014 PicticiousPro
+          <div class="fs-cell-right fs-lg-half fs-md-half">
+                <div class="social">
+                    <a href="http://twitter.com" class="twitter"></a>
+                    <a href="http://facebook.com" class="facebook"></a>
+                    <a href="http://plus.google.com" class="googleplus"></a>
+                </div>
+            </div>
+           <div class="fs-cell fs-lg-half fs-md-half fs-sm-3">
+                <div class="footer-links">
+                    <a href="http://support.com" class="support">Support</a>
+                    <a href="http://privacy.com" class="privacy">Privacy &amp; Terms</a>
+                    <span class="copyright">© 2014 PicticiousPro</span>
+                </div>
             </div>
         </div>
     </footer>

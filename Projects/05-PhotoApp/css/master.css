@@ -39,12 +39,13 @@ body {
     background-color: #e77e04;
     background-size: cover;
 }
-.intro_phone {
+
+.intro_row {
     position: relative;
     padding: 100px 0;
 }
 
-.intro_phone:before {
+.intro_phone {
     background: url(../images/intro_phone.png) no-repeat center top;
     bottom: 0;
     content: '';
@@ -52,10 +53,16 @@ body {
     position: absolute;
     width: 325px;
     height: 550px;
-    right: -150px;
+    right: -10px;
+    
+    transition: transform 0.5s ease;
     
 }
 
+
+.intro_phone:hover {
+    transform: scale(1.05);
+}
 .intro h1 {
     font-family: "Roboto Condensed", Helvetica, sans-serif;
     font-weight: 100;
@@ -85,10 +92,12 @@ body {
 	padding:22px 28px;
 	text-decoration:none;
     margin: 10px 0;
+    transition: opacity 0.3s ease, padding 1s ease;
 }
 
 .download-button:hover {
 	background-color:#f6f6f6;
+    opacity: 1;
 }
 
 .download-button:active {
@@ -159,7 +168,12 @@ body {
     overflow: hidden;
     text-indent: 200%;
     white-space: nowrap;
+    box-shadow: 0 0 0 0 #000;
+    transition: box-shadow 0.2s ease;
     
+}
+.appstore-button:hover {
+    box-shadow: 0 0 0 5px #000;
 }
 
 .photo-1 {
@@ -211,8 +225,17 @@ body {
     color: #777;
 }
 
+.fs-carousel-enabled a {
+    margin: 0 10px 0 0;
+}
+
+.fs-carousel-enabled img {
+    width: 100%;
+}
+
 .app-download {
     padding: 120px 0;
+    text-align: center;
 }
 
 .app-download h2 {
@@ -239,4 +262,65 @@ body {
     border-style: solid;
     border-color: darkgray;
     padding: 50px 0;
+}
+
+.social {
+    text-align: right;
+}
+
+.footer-links a {
+    padding: 0;
+    text-decoration: none;
+    color: #2b3f4c;
+}
+
+.footer-links span {
+    color: #777;
+}
+
+.support {
+    margin: 0 5px;
+}
+
+.privacy {
+    margin: 0 35px;
+}
+
+.copyright {
+    
+}
+
+.facebook {
+    height: 40px;
+    width: 40px;
+    background: url(../images/icon_sprite.png) -80px 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.twitter {
+    height: 40px;
+    width: 40px;
+    background: url(../images/icon_sprite.png) -120px 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.googleplus {
+    height: 40px;
+    width: 40px;
+    background: url(../images/icon_sprite.png) -160px 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    display: inline-block;
+    margin: 0 5px;
 }
